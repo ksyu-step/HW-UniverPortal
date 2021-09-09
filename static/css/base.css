@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    padding: 5px, 5%;
+    background-image: url('../img/uu.jpg');
+    background-size: 100%;
+    color: brown;
+    font: 12pt 'Verdana';
+}
+
+header>h1 {
+    text-color: ;
+    text-shadow: 3px 3px white;
+    font-size: 50px;
+}
+nav {
+    padding: 10px;
+}
+nav a{
+    color: brown;
+    text-decoration: none;
+    padding: 20px;
+    font: 20pt cursive;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}

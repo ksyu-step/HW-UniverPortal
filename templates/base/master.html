@@ -1,0 +1,44 @@
+<!--Базовый шаблон -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> UU - {% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <!--link rel="icon" href="data:,"-->
+</head>
+<body>
+<header>
+    <h1>UNSEEN UNIVERSITY PORTAL</h1>
+</header>
+<hr>
+<nav>
+    <div class="row">
+        <div class="col-md-8 left">
+            |
+            <a href="/">Главная</a>
+            |
+            <a href="/tgtu">Условия приема</a>
+            |
+            <a href="/about">Про Незримый Университет</a>
+            |
+        </div>
+        <div class="col-md-4 right">
+            |
+            <a href="/users/login">Вход</a>
+            |
+        </div>
+    </div>
+</nav>
+<hr>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<hr>
+<footer>
+    <H4>Copyright: KsyuWebGuilds - Ankh-Morpork, 2005 AM</H4>
+</footer>
+</body>
+</html>
